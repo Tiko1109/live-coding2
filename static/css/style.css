@@ -1,0 +1,124 @@
+:root {
+    --main-brown: #C4A484;
+    --hover-brown: #5C4033;
+    --text-white: #FFF;
+    --shadow-color: #8B0000;
+}
+
+.card-wrapper {
+    width: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 17%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-brown);
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: var(--hover-brown);
+    transition: 0.3s;
+    box-shadow: 10px 10px 10px var(--shadow-color);
+}
+
+.user-id {
+    width: 100%;
+    text-align: right;
+    color: var(--text-white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.picture img {
+    width: 100%;
+    margin: auto;
+}
+
+.user-info {
+    height: 83px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-info span, .user-info address {
+    text-align: left;
+    color: var(--text-white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.user-surname {
+    font-size: 12px;
+    font-weight: 700;
+} 
+
+.user-age, .user-address {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+@media (max-width:768px) {
+    .card {
+        width: 30%;
+    }
+}
+
+@media (max-width:600px) {
+    .card {
+        width: 40%;
+    }
+}
